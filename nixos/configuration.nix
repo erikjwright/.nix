@@ -49,19 +49,19 @@
     LC_TIME = "it_IT.UTF-8";
   };
 
-  # services.keyd = {
-  # enable = true;
-  # keyboards = {
-  # defaults = {
-  # ids = [ "*" ];
-  # settings = {
-  # main = {
-  # capslock = "overload(control, esc)";
-  # };
-  # };
-  # };
-  # };
-  # };
+  services.keyd = {
+    enable = true;
+    keyboards = {
+      defaults = {
+        ids = [ "*" ];
+        settings = {
+          main = {
+            capslock = "overload(control, esc)";
+          };
+        };
+      };
+    };
+  };
 
   # Configure keymap in X11
   services.xserver = {
