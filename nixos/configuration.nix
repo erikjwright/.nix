@@ -93,7 +93,7 @@
   nixpkgs.config.allowUnfree = true;
 
   # programs.dconf.enable = true;
-  # programs.firefox.enable = true;
+  programs.firefox.enable = true;
   programs.git.enable = true;
   programs.htop.enable = true;
   programs.hyprland.enable = true;
