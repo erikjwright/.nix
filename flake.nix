@@ -4,12 +4,12 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     # nix-darwin = {
-      # url = "github:LnL7/nix-darwin";
-      # inputs.nixpkgs.follows = "nixpkgs";
+    # url = "github:LnL7/nix-darwin";
+    # inputs.nixpkgs.follows = "nixpkgs";
     # };
     # home-manager = {
-      # url = "github:nix-community/home-manager";
-      # inputs.nixpkgs.follows = "nixpkgs";
+    # url = "github:nix-community/home-manager";
+    # inputs.nixpkgs.follows = "nixpkgs";
     # };
   };
 
@@ -32,12 +32,12 @@
       };
 
       # darwinConfigurations = {
-        # rhea = nix-darwin.lib.darwinSystem {
-          # system = "aarch64-darwin";
-          # modules = [
-            # ./darwin/configuration.nix
-          # ];
-        # };
+      # rhea = nix-darwin.lib.darwinSystem {
+      # system = "aarch64-darwin";
+      # modules = [
+      # ./darwin/configuration.nix
+      # ];
+      # };
       # };
     };
 }

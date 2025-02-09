@@ -50,17 +50,17 @@
   };
 
   # services.keyd = {
-    # enable = true;
-    # keyboards = {
-      # defaults = {
-        # ids = [ "*" ];
-        # settings = {
-          # main = {
-            # capslock = "overload(control, esc)";
-          # };
-        # };
-      # };
-    # };
+  # enable = true;
+  # keyboards = {
+  # defaults = {
+  # ids = [ "*" ];
+  # settings = {
+  # main = {
+  # capslock = "overload(control, esc)";
+  # };
+  # };
+  # };
+  # };
   # };
 
   # Configure keymap in X11
@@ -95,14 +95,14 @@
   # programs.dconf.enable = true;
   # programs.firefox.enable = true;
   programs.git.enable = true;
-  # programs.htop.enable = true;
-  # programs.hyprland.enable = true;
+  programs.htop.enable = true;
+  programs.hyprland.enable = true;
   # programs.light.enable = true;
   programs = {
     zsh = {
       enable = true;
       # interactiveShellInit = ''
-        # source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+      # source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
       # '';
       # syntaxHighlighting.enable = false;
       # autosuggestions.enable = true;
@@ -146,7 +146,7 @@
     # clang
     curl
     # dbeaver-bin
-    # direnv
+    direnv
     eza
     fzf
     ghostty
