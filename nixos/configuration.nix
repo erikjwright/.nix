@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  inputs,
+  # inputs,
   ...
 }:
 {
@@ -49,26 +49,26 @@
     LC_TIME = "it_IT.UTF-8";
   };
 
-  services.keyd = {
-    enable = true;
-    keyboards = {
-      defaults = {
-        ids = [ "*" ];
-        settings = {
-          main = {
-            capslock = "overload(control, esc)";
-          };
-        };
-      };
-    };
-  };
+  # services.keyd = {
+    # enable = true;
+    # keyboards = {
+      # defaults = {
+        # ids = [ "*" ];
+        # settings = {
+          # main = {
+            # capslock = "overload(control, esc)";
+          # };
+        # };
+      # };
+    # };
+  # };
 
   # Configure keymap in X11
   services.xserver = {
     xkb = {
       layout = "us";
       # options = "caps:swapescape";
-      variant = "nodeadkeys";
+      variant = "";
     };
   };
 
@@ -82,7 +82,7 @@
       description = "Erik Wright";
       extraGroups = [
         "networkmanager"
-        "video"
+        # "video"
         "wheel"
       ];
       packages = with pkgs; [ ];
@@ -92,20 +92,20 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  programs.dconf.enable = true;
+  # programs.dconf.enable = true;
   programs.firefox.enable = true;
   programs.htop.enable = true;
   programs.hyprland.enable = true;
-  programs.light.enable = true;
+  # programs.light.enable = true;
   programs = {
     zsh = {
       enable = true;
-      interactiveShellInit = ''
-        source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-      '';
-      syntaxHighlighting.enable = false;
-      autosuggestions.enable = true;
-      enableCompletion = true;
+      # interactiveShellInit = ''
+        # source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+      # '';
+      # syntaxHighlighting.enable = false;
+      # autosuggestions.enable = true;
+      # enableCompletion = true;
       # dotDir = ".config/zsh";
       # completionInit = ''
       #   autoload -Uz compinit && compinit
@@ -140,19 +140,20 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    bun
-    chezmoi
-    clang
-    curl
-    dbeaver-bin
-    direnv
+    # bun
+    # chezmoi
+    # clang
+    # curl
+    # dbeaver-bin
+    # direnv
     eza
     fzf
     ghostty
     git
-    inputs.neovim-nightly-overlay.packages.${system}.default
-    gparted
+    # inputs.neovim-nightly-overlay.packages.${system}.default
+    # gparted
     meslo-lgs-nf
+    neovim
     nixfmt-rfc-style
     nodejs_22
     ripgrep
@@ -160,11 +161,11 @@
     starship
     tofi
     unzip
-    uv
-    vim
+    # uv
+    # vim
     waybar
     yazi
-    inputs.zen-browser.packages."${system}".default
+    # inputs.zen-browser.packages."${system}".default
     zoxide
   ];
 
