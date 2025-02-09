@@ -72,7 +72,7 @@
     };
   };
 
-  console.useXkbConfig = true;
+  # console.useXkbConfig = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users = {
@@ -94,6 +94,7 @@
 
   # programs.dconf.enable = true;
   # programs.firefox.enable = true;
+  programs.git.enable = true;
   # programs.htop.enable = true;
   # programs.hyprland.enable = true;
   # programs.light.enable = true;
@@ -149,7 +150,6 @@
     eza
     fzf
     ghostty
-    git
     # inputs.neovim-nightly-overlay.packages.${system}.default
     # gparted
     # meslo-lgs-nf
