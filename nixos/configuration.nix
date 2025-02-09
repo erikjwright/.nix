@@ -106,7 +106,7 @@
       syntaxHighlighting.enable = false;
       autosuggestions.enable = true;
       enableCompletion = true;
-      dotDir = ".config/zsh";
+      # dotDir = ".config/zsh";
       # completionInit = ''
       #   autoload -Uz compinit && compinit
       #   zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
