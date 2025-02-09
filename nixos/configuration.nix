@@ -93,9 +93,9 @@
   nixpkgs.config.allowUnfree = true;
 
   # programs.dconf.enable = true;
-  programs.firefox.enable = true;
-  programs.htop.enable = true;
-  programs.hyprland.enable = true;
+  # programs.firefox.enable = true;
+  # programs.htop.enable = true;
+  # programs.hyprland.enable = true;
   # programs.light.enable = true;
   programs = {
     zsh = {
@@ -143,7 +143,7 @@
     # bun
     # chezmoi
     # clang
-    # curl
+    curl
     # dbeaver-bin
     # direnv
     eza
@@ -152,15 +152,15 @@
     git
     # inputs.neovim-nightly-overlay.packages.${system}.default
     # gparted
-    meslo-lgs-nf
+    # meslo-lgs-nf
     neovim
     nixfmt-rfc-style
-    nodejs_22
+    # nodejs_22
     ripgrep
-    rustup
+    # rustup
     starship
     tofi
-    unzip
+    # unzip
     # uv
     # vim
     waybar
