@@ -142,7 +142,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # bun
-    # chezmoi
+    chezmoi
     # clang
     curl
     # dbeaver-bin
